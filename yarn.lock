@@ -141,10 +141,10 @@
     "ora" "5.4.1"
     "rxjs" "6.6.7"
 
-"@angular/animations@~13.3.11":
-  "integrity" "sha512-KE/3RuvixHIk9YTSwaUsezsUm9Ig9Y8rZMpHOT/8bRtzPiJ5ld2GnDHjrJgyZn7TdoP4wz4YCta5eC4ycu+KCw=="
-  "resolved" "https://registry.npmjs.org/@angular/animations/-/animations-13.3.11.tgz"
-  "version" "13.3.11"
+"@angular/animations@~14.2.2":
+  "integrity" "sha512-YPtwjfjGCtRlGIYyFK8JPq6kfR8Gz93kmkIF+fnUes42M5DAQvCccVRxi1OXU6dDLsFY9w7DvTl+HR/VocaFsg=="
+  "resolved" "https://registry.npmjs.org/@angular/animations/-/animations-14.2.2.tgz"
+  "version" "14.2.2"
   dependencies:
     "tslib" "^2.3.0"
 
@@ -182,17 +182,17 @@
     "symbol-observable" "4.0.0"
     "uuid" "8.3.2"
 
-"@angular/common@~13.3.11":
-  "integrity" "sha512-gPMwDYIAag1izXm2tRQ6EOIx9FVEUqLdr+qYtRVoQtoBmfkoTSLGcpeBXqqlPVxVPbA6Li1WZZT5wxLLlLAN+Q=="
-  "resolved" "https://registry.npmjs.org/@angular/common/-/common-13.3.11.tgz"
-  "version" "13.3.11"
+"@angular/common@~14.2.2":
+  "integrity" "sha512-9h8MwFLvIJ5kB5L03cd3Cyl4ySKVzL/E/YYugfLvcAzYZ8Rief63gJnkcKNjoS1A5DTxHhOBQL7pLZpj+YxDOw=="
+  "resolved" "https://registry.npmjs.org/@angular/common/-/common-14.2.2.tgz"
+  "version" "14.2.2"
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/compiler-cli@~13.3.11":
-  "integrity" "sha512-cl+3Wzxt8NRi2WY+RdsxuQ3yQRUp8pSlfSlJJnfaKE1BEqap6uem2DovuhnIbmrLhxZ5xt7o+I1szyO6sn6+ag=="
-  "resolved" "https://registry.npmjs.org/@angular/compiler-cli/-/compiler-cli-13.3.11.tgz"
-  "version" "13.3.11"
+"@angular/compiler-cli@~14.2.2":
+  "integrity" "sha512-r3vOBUqInHwahloz4mmSrXk22q/4WGNoRR0hxR71tUhLiowYkAaWe72TdPYrDt0SYgZcffAomK7iQHrpJiwLuQ=="
+  "resolved" "https://registry.npmjs.org/@angular/compiler-cli/-/compiler-cli-14.2.2.tgz"
+  "version" "14.2.2"
   dependencies:
     "@babel/core" "^7.17.2"
     "chokidar" "^3.0.0"
@@ -205,24 +205,31 @@
     "tslib" "^2.3.0"
     "yargs" "^17.2.1"
 
-"@angular/compiler@~13.3.11":
-  "integrity" "sha512-EV6JCBbXdHDHbPShWmymvuoxFYG0KVc8sDJpYp47WLHCY2zgZaXhvWs//Hrls3fmi+TGTekgRa2jOBBNce/Ggg=="
-  "resolved" "https://registry.npmjs.org/@angular/compiler/-/compiler-13.3.11.tgz"
-  "version" "13.3.11"
+"@angular/compiler@~14.2.2":
+  "integrity" "sha512-r6673fINahrESOk1lJgXFDO3cH3gTDJJrj1++yYfrgRSqGMzASECy3XTevCjIvw9SycIkU/P+NiE/W/WAlP5vg=="
+  "resolved" "https://registry.npmjs.org/@angular/compiler/-/compiler-14.2.2.tgz"
+  "version" "14.2.2"
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/core@~13.3.11":
-  "integrity" "sha512-9BmE2CxyV0g+AkBeuc8IwjSOiJ8Y+kptXnqD/J8EAFT3B0/fLGVnjFdZC6Sev9L0SNZb6qdzebpfIOLqbUjReQ=="
-  "resolved" "https://registry.npmjs.org/@angular/core/-/core-13.3.11.tgz"
-  "version" "13.3.11"
+"@angular/core@~14.2.2":
+  "integrity" "sha512-kG30b4RqjgWvaH9y4g95JRCzoROV+9/xgFH4hSRejFa/IcapMfvCmONJtJzwTjdsEUQAbiFohF/z9bx3QA/Yvw=="
+  "resolved" "https://registry.npmjs.org/@angular/core/-/core-14.2.2.tgz"
+  "version" "14.2.2"
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/forms@~13.3.11":
-  "integrity" "sha512-iMgTNB+Qc3TsfAZSk1FnUE6MVoddPzxhG9AKCfSlvpjFh8VmXkIjxPL3dun7J8OjayT3X+B8f7LZ9AkKNXtBKw=="
-  "resolved" "https://registry.npmjs.org/@angular/forms/-/forms-13.3.11.tgz"
-  "version" "13.3.11"
+"@angular/flex-layout@^14.0.0-beta.40":
+  "integrity" "sha512-lYi2BKovNk5u2wmj/AMIMqfUzCBEt99Wu/Gfa+1mUIlw3voKCmIsV2XYBhX4adRdD+dRagY3Opger43JR7PXEw=="
+  "resolved" "https://registry.npmjs.org/@angular/flex-layout/-/flex-layout-14.0.0-beta.40.tgz"
+  "version" "14.0.0-beta.40"
+  dependencies:
+    "tslib" "^2.3.0"
+
+"@angular/forms@~14.2.2":
+  "integrity" "sha512-lq6PpLMNfs0KcIhkQrUVfKuP4hZSeUQyKOErvoLrPhDiakvOWYoQZKh6XHsbQRcuhWKHy6IITldz6sg8pWVrTw=="
+  "resolved" "https://registry.npmjs.org/@angular/forms/-/forms-14.2.2.tgz"
+  "version" "14.2.2"
   dependencies:
     "tslib" "^2.3.0"
 
@@ -233,24 +240,24 @@
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/platform-browser-dynamic@~13.3.11":
-  "integrity" "sha512-xM0VRC1Nw//SHO3gkghUHyjCaaQbk1UYMq4vIu3iKVq9KLqOSZgccv0NcOKHzXXN3S5RgX2auuyOUOCD6ny1Pg=="
-  "resolved" "https://registry.npmjs.org/@angular/platform-browser-dynamic/-/platform-browser-dynamic-13.3.11.tgz"
-  "version" "13.3.11"
+"@angular/platform-browser-dynamic@~14.2.2":
+  "integrity" "sha512-fehhiOwC4mn4sprjSiuGc0uITToiiKJJdtUNDsJyOJinKuy3GBwHpGckiEx4E85Z/PkPCMb8lYRJb/IciUV9+A=="
+  "resolved" "https://registry.npmjs.org/@angular/platform-browser-dynamic/-/platform-browser-dynamic-14.2.2.tgz"
+  "version" "14.2.2"
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/platform-browser@~13.3.11":
-  "integrity" "sha512-PG3chCErARb6wNzkOed2NsZmgvTmbumRx/6sMXqGkDKXYQm0JULnl4X42Rn+JCgJ9DLJi5/jrd1dbcBCrKk9Vg=="
-  "resolved" "https://registry.npmjs.org/@angular/platform-browser/-/platform-browser-13.3.11.tgz"
-  "version" "13.3.11"
+"@angular/platform-browser@~14.2.2":
+  "integrity" "sha512-1NrtOIvevoDDT6DU+Fsm5TsNN/XJhIV/UhfInmU/rz97RERl8etcOQRsxWnjGwZjk9rjt+0lBbW5oVDFKOJa+w=="
+  "resolved" "https://registry.npmjs.org/@angular/platform-browser/-/platform-browser-14.2.2.tgz"
+  "version" "14.2.2"
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/router@~13.3.11":
-  "integrity" "sha512-bJTcxDYKEyoqtsi1kJcDJWLmEN+dXpwhU07SsqUwfyN4V5fYF1ApDhpJ4c17hNdjEqe106srT9tiHXhmWayhmQ=="
-  "resolved" "https://registry.npmjs.org/@angular/router/-/router-13.3.11.tgz"
-  "version" "13.3.11"
+"@angular/router@~14.2.2":
+  "integrity" "sha512-BRkXdAVK0rE/x6im91a/fdIcWhPILO6ZmwCVTEdvsRyI9arQSlXAnupPUeumdbSc6mG/FCXPcyJq/dU0Jl70Og=="
+  "resolved" "https://registry.npmjs.org/@angular/router/-/router-14.2.2.tgz"
+  "version" "14.2.2"
   dependencies:
     "tslib" "^2.3.0"
 
@@ -1363,6 +1370,100 @@
   "resolved" "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz"
   "version" "2.0.4"
 
+"@material/animation@^14.0.0":
+  "integrity" "sha512-VlYSfUaIj/BBVtRZI8Gv0VvzikFf+XgK0Zdgsok5c1v5DDnNz5tpB8mnGrveWz0rHbp1X4+CWLKrTwNmjrw3Xw=="
+  "resolved" "https://registry.npmjs.org/@material/animation/-/animation-14.0.0.tgz"
+  "version" "14.0.0"
+  dependencies:
+    "tslib" "^2.1.0"
+
+"@material/base@^14.0.0":
+  "integrity" "sha512-Ou7vS7n1H4Y10MUZyYAbt6H0t67c6urxoCgeVT7M38aQlaNUwFMODp7KT/myjYz2YULfhu3PtfSV3Sltgac9mA=="
+  "resolved" "https://registry.npmjs.org/@material/base/-/base-14.0.0.tgz"
+  "version" "14.0.0"
+  dependencies:
+    "tslib" "^2.1.0"
+
+"@material/card@^14.0.0":
+  "integrity" "sha512-SnpYWUrCb92meGYLXV7qa/k40gnHR6rPki6A1wz0OAyG2twY48f0HLscAqxBLvbbm1LuRaqjz0RLKGH3VzxZHw=="
+  "resolved" "https://registry.npmjs.org/@material/card/-/card-14.0.0.tgz"
+  "version" "14.0.0"
+  dependencies:
+    "@material/dom" "^14.0.0"
+    "@material/elevation" "^14.0.0"
+    "@material/feature-targeting" "^14.0.0"
+    "@material/ripple" "^14.0.0"
+    "@material/rtl" "^14.0.0"
+    "@material/shape" "^14.0.0"
+    "@material/theme" "^14.0.0"
+    "tslib" "^2.1.0"
+
+"@material/dom@^14.0.0":
+  "integrity" "sha512-8t88XyacclTj8qsIw9q0vEj4PI2KVncLoIsIMzwuMx49P2FZg6TsLjor262MI3Qs00UWAifuLMrhnOnfyrbe7Q=="
+  "resolved" "https://registry.npmjs.org/@material/dom/-/dom-14.0.0.tgz"
+  "version" "14.0.0"
+  dependencies:
+    "@material/feature-targeting" "^14.0.0"
+    "tslib" "^2.1.0"
+
+"@material/elevation@^14.0.0":
+  "integrity" "sha512-Di3tkxTpXwvf1GJUmaC8rd+zVh5dB2SWMBGagL4+kT8UmjSISif/OPRGuGnXs3QhF6nmEjkdC0ijdZLcYQkepw=="
+  "resolved" "https://registry.npmjs.org/@material/elevation/-/elevation-14.0.0.tgz"
+  "version" "14.0.0"
+  dependencies:
+    "@material/animation" "^14.0.0"
+    "@material/base" "^14.0.0"
+    "@material/feature-targeting" "^14.0.0"
+    "@material/rtl" "^14.0.0"
+    "@material/theme" "^14.0.0"
+    "tslib" "^2.1.0"
+
+"@material/feature-targeting@^14.0.0":
+  "integrity" "sha512-a5WGgHEq5lJeeNL5yevtgoZjBjXWy6+klfVWQEh8oyix/rMJygGgO7gEc52uv8fB8uAIoYEB3iBMOv8jRq8FeA=="
+  "resolved" "https://registry.npmjs.org/@material/feature-targeting/-/feature-targeting-14.0.0.tgz"
+  "version" "14.0.0"
+  dependencies:
+    "tslib" "^2.1.0"
+
+"@material/ripple@^14.0.0":
+  "integrity" "sha512-9XoGBFd5JhFgELgW7pqtiLy+CnCIcV2s9cQ2BWbOQeA8faX9UZIDUx/g76nHLZ7UzKFtsULJxZTwORmsEt2zvw=="
+  "resolved" "https://registry.npmjs.org/@material/ripple/-/ripple-14.0.0.tgz"
+  "version" "14.0.0"
+  dependencies:
+    "@material/animation" "^14.0.0"
+    "@material/base" "^14.0.0"
+    "@material/dom" "^14.0.0"
+    "@material/feature-targeting" "^14.0.0"
+    "@material/rtl" "^14.0.0"
+    "@material/theme" "^14.0.0"
+    "tslib" "^2.1.0"
+
+"@material/rtl@^14.0.0":
+  "integrity" "sha512-xl6OZYyRjuiW2hmbjV2omMV8sQtfmKAjeWnD1RMiAPLCTyOW9Lh/PYYnXjxUrNa0cRwIIbOn5J7OYXokja8puA=="
+  "resolved" "https://registry.npmjs.org/@material/rtl/-/rtl-14.0.0.tgz"
+  "version" "14.0.0"
+  dependencies:
+    "@material/theme" "^14.0.0"
+    "tslib" "^2.1.0"
+
+"@material/shape@^14.0.0":
+  "integrity" "sha512-o0mJB0+feOv473KckI8gFnUo8IQAaEA6ynXzw3VIYFjPi48pJwrxa0mZcJP/OoTXrCbDzDeFJfDPXEmRioBb9A=="
+  "resolved" "https://registry.npmjs.org/@material/shape/-/shape-14.0.0.tgz"
+  "version" "14.0.0"
+  dependencies:
+    "@material/feature-targeting" "^14.0.0"
+    "@material/rtl" "^14.0.0"
+    "@material/theme" "^14.0.0"
+    "tslib" "^2.1.0"
+
+"@material/theme@^14.0.0":
+  "integrity" "sha512-6/SENWNIFuXzeHMPHrYwbsXKgkvCtWuzzQ3cUu4UEt3KcQ5YpViazIM6h8ByYKZP8A9d8QpkJ0WGX5btGDcVoA=="
+  "resolved" "https://registry.npmjs.org/@material/theme/-/theme-14.0.0.tgz"
+  "version" "14.0.0"
+  dependencies:
+    "@material/feature-targeting" "^14.0.0"
+    "tslib" "^2.1.0"
+
 "@ngtools/webpack@14.2.2":
   "integrity" "sha512-mjHv5DPsK6QP/D4zi6Oc4gMEZGNYv6Hmw/xJ1ZZTjSxgKujmHx2keDLSJHZpoLtbHRr+FHfWNnPfPz9dWYrlYQ=="
   "resolved" "https://registry.npmjs.org/@ngtools/webpack/-/webpack-14.2.2.tgz"
@@ -2132,6 +2233,11 @@
   "integrity" "sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww=="
   "resolved" "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
   "version" "1.0.0"
+
+"bootstrap@^5.2.1":
+  "integrity" "sha512-UQi3v2NpVPEi1n35dmRRzBJFlgvWHYwyem6yHhuT6afYF+sziEt46McRbT//kVXZ7b1YUYEVGdXEH74Nx3xzGA=="
+  "resolved" "https://registry.npmjs.org/bootstrap/-/bootstrap-5.2.1.tgz"
+  "version" "5.2.1"
 
 "brace-expansion@^1.1.7":
   "integrity" "sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA=="
