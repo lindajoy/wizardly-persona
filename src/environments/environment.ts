@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+      apiKey: "AIzaSyDzhuA9pkg3L6zq6wCzg9XCnpqr5n09l-0",
+      authDomain: "wizardly-persona.firebaseapp.com",
+      projectId: "wizardly-persona",
+      storageBucket: "wizardly-persona.appspot.com",
+      messagingSenderId: "323631493641",
+      appId: "1:323631493641:web:e8b0664ef5a04547e5fed8",
+      measurementId: "G-FTT6HRG1EC"
+    }
 };
 
 /*
@@ -14,3 +23,16 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+// Import the functions you need from the SDKs you need
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// const
+
+// Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);

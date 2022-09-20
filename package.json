@@ -16,6 +16,7 @@
     "@angular/common": "~14.2.2",
     "@angular/compiler": "~14.2.2",
     "@angular/core": "~14.2.2",
+    "@angular/fire": "^7.4.1",
     "@angular/flex-layout": "^14.0.0-beta.40",
     "@angular/forms": "~14.2.2",
     "@angular/material": "^14.2.2",
@@ -24,6 +25,7 @@
     "@angular/router": "~14.2.2",
     "@material/card": "^14.0.0",
     "bootstrap": "^5.2.1",
+    "firebase": "^9.10.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
