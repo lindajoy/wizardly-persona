@@ -22,6 +22,7 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 
 
@@ -29,7 +30,8 @@ import { environment } from '../environments/environment';
   declarations: [
     AppComponent,
     SigninComponent,
-    SignUpComponent
+    SignUpComponent,
+    LandingPageComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
