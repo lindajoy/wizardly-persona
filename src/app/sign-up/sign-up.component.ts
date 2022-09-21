@@ -19,8 +19,11 @@ export class SignUpComponent implements OnInit {
 
   private _initializeForm(){
     this.registerForm = this._fb.group({
-      name: ['', [Validators.required, Validators.maxLength(16)]],
+      firstName: ['', [Validators.required, Validators.maxLength(16)]],
+      lastName: ['', [Validators.required, Validators.maxLength(16)]],
       password: ['', [Validators.required, Validators.maxLength(64)]],
+      confirmPassword: ['', [Validators.required, Validators.maxLength(64)]],
+      phoneNumber: ['', [Validators.required, Validators.maxLength(64)]],
       email:['', [Validators.required, Validators.maxLength(64)]]
     })
   }
