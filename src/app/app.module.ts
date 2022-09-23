@@ -23,8 +23,13 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { Route, RouterModule, Routes } from '@angular/router';
 
-
+const routes: Routes = [
+  { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
+  { path: 'sign-in', component: SigninComponent },
+  { path: 'register-user', component: SignUpComponent },
+]
 
 @NgModule({
   declarations: [
@@ -35,6 +40,7 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
+    RouterModule.forRoot(routes),
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
