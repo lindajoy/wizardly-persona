@@ -24,6 +24,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { Route, RouterModule, Routes } from '@angular/router';
+import { ErrorPageComponent } from './pages/error-page/error-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
@@ -37,7 +38,8 @@ const routes: Routes = [
     AppComponent,
     SigninComponent,
     SignUpComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ErrorPageComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
