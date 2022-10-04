@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { MatSliderModule } from '@angular/material/slider';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { MatCardModule } from '@angular/material/card';
-
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SigninComponent } from './components/signin/signin.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -14,24 +14,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon'
 import { MatButtonModule } from '@angular/material/button';
-import { SignUpComponent } from './sign-up/sign-up.component';
 
-import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-import { AngularFireStorageModule } from '@angular/fire/compat/storage';
-import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
-import { environment } from '../environments/environment';
-import { LandingPageComponent } from './components/landing-page/landing-page.component';
-import { Route, RouterModule, Routes } from '@angular/router';
+import { MaterialBricksModule } from '@iote/bricks-angular';
+
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
-const routes: Routes = [
-  { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
-  { path: 'sign-in', component: SigninComponent },
-  { path: 'register-user', component: SignUpComponent },
-  { path: 'landing-page', component:LandingPageComponent }
-]
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { environment } from '../environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -39,11 +33,11 @@ const routes: Routes = [
     SigninComponent,
     SignUpComponent,
     LandingPageComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    NavbarComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
-    RouterModule.forRoot(routes),
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
@@ -54,7 +48,7 @@ const routes: Routes = [
     MatCardModule,MatIconModule,MatButtonModule,
     MatFormFieldModule, FlexLayoutModule,
     FormsModule, ReactiveFormsModule,
-
+    MaterialBricksModule,
     BrowserAnimationsModule
   ],
   providers: [],
