@@ -5,7 +5,9 @@ import {
   AngularFirestore,
   AngularFirestoreDocument,
 } from '@angular/fire/compat/firestore';
+
 import { Router } from '@angular/router';
+import { User } from '../interfaces/user';
 
 @Injectable({
   providedIn: 'root',
@@ -39,7 +41,7 @@ export class AuthService {
         this.SetUserData(result.user);
         this.afAuth.authState.subscribe((user) => {
           if (user) {
-            this.router.navigate(['landing-page']);
+            this.router.navigate(['home']);
           }
         });
       })
@@ -114,7 +116,6 @@ export class AuthService {
       uid: user.uid,
       email: user.email,
       displayName: user.displayName,
-      photoURL: user.photoURL,
       emailVerified: user.emailVerified,
     };
     return userRef.set(userData, {
