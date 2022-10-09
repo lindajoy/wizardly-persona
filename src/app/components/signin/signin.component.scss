@@ -36,10 +36,14 @@ mat-card {
 .salutation {
     width: 400px;
     font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 .p1 {
-    color: #54626F
+    color: #54626F;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 .login-btns {
@@ -91,4 +95,6 @@ mat-card {
 .sign-up-text  {
     @extend .btn-primary;
     text-decoration: underline;
+    font-family: 'Quicksand', sans-serif;
+
 }

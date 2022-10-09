@@ -1,7 +1,7 @@
 <div class="auth-page" fxLayout="row" fxLayoutAlign="center center">
     <div fxFlexLayout="row" class="auth-card" fxLayoutAlign="space-between">
-        <div fxLayout="column" fxLayoutAlign="end center" fxLayoutGap="30px" fxFlex="50" class="syndic-info">
-            <img class="loginPic" src="assets\magic\conifer.png" />
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="30px" fxFlex="50">
+            <img class="loginPic" src="assets\landing-page\dragon-amico.svg" />
         </div>
 
         <div fxFlex="50" fxFlex.md="100" fxLayout="column" fxLayoutAlign="space-between stretch" class="actual-form">
@@ -25,7 +25,7 @@
                             </div>
                             <form [formGroup]="loginForm" fxLayout="column" class="form-body" fxLayoutGap="15px">
                                 <div class="form-group">
-                                    <mat-label for="username">Username</mat-label>
+                                    <mat-label for="username">Email</mat-label>
                                     <input type="text" formControlName="name" #username class="form-control" />
                                     <div class="invalid-feedback">
                                         <div>Username is required</div>
