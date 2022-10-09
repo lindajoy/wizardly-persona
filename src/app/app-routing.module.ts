@@ -4,12 +4,14 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { SigninComponent } from './components/signin/signin.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 
 //Main routes module
 const routes: Routes = [
   { path: 'home', component: LandingPageComponent },
   { path: 'sign-in', component: SigninComponent },
   { path: 'register-user', component: SignUpComponent },
+  { path: 'verify-email-address', component: VerifyEmailComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: ErrorPageComponent }
 ];

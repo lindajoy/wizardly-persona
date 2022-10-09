@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/shared/services/auth.service';
 
 @Component({
   selector: 'app-signin',
@@ -15,7 +16,8 @@ export class SigninComponent implements OnInit {
   tempFormVals: any;
 
   constructor(private _fb: FormBuilder,
-              private _router: Router) { }
+              private _router: Router,
+              public authservice: AuthService) { }
 
   ngOnInit(): void {
     this.showFirstStep = true;

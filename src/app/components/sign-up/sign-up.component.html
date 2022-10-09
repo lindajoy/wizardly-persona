@@ -28,19 +28,19 @@
                                 <div fxLayout="row" fxLayoutGap="10px">
                                     <div fxLayout="column" fxFlex='50' fxLayoutGap="5px">
                                       <label class="form-label" for="email">First Name</label>
-                                      <input type="text" formControlName="firstName" class="form-control" />
+                                      <input type="text"  #firstName formControlName="firstName" class="form-control" />
                                     </div>
                       
                                     <div fxLayout="column" fxFlex='50' fxLayoutGap="5px">
                                       <label class="form-label" for="password">Last Name</label>
-                                      <input type="text" formControlName="firstName" class="form-control" />  
+                                      <input type="text" #lastName  formControlName="firstName" class="form-control" />  
                                     </div>
                                   </div>
 
                                   <div fxLayout="row" fxLayoutGap="10px">
                                     <div fxLayout="column" fxFlex='50' fxLayoutGap="5px">
                                       <label for="password">Password</label>
-                                      <input type="password" formControlName="password" class="form-control"/>
+                                      <input type="password" #password  formControlName="password" class="form-control"/>
                                     </div>
                     
                                     <div fxLayout="column" fxFlex='50' fxLayoutGap="5px">
@@ -57,7 +57,7 @@
 
                                       <div fxLayout="column" fxFlex='50' fxLayoutGap="5px">
                                         <label class="form-label" for="email">Email</label>
-                                        <input type="text" formControlName="email" class="form-control"/>  
+                                        <input type="text" #userEmail formControlName="email" class="form-control"/>  
                                       </div>
                                   </div>                      
                       
@@ -68,15 +68,9 @@
 
                             <div class="login-btns" fxLayout="column">
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-primary" type="button">Login</button>
-                                    <button class="btn btn-secondary" type="button"><span>
-                                            <img class="google-btn"
-                                                src="https://img.icons8.com/color/48/000000/google-logo.png" />
-                                        </span>
-                                        &nbsp;
-                                        <span class="btn-secondary">
-                                            Login with Google
-                                        </span></button>
+                                    <button class="btn btn-primary" type="button"
+                                    (click)="authService.SignUp(userEmail.value, password.value)">Sign Up</button>
+                                    
                                 </div>
                             </div>
                             </div>

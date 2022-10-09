@@ -25,6 +25,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
+import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { environment } from '../environments/environment';
     SignUpComponent,
     LandingPageComponent,
     ErrorPageComponent,
-    NavbarComponent
+    NavbarComponent,
+    VerifyEmailComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),

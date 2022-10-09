@@ -86,3 +86,9 @@ mat-card {
 .google-btn{
     width: 20px;
 }
+
+/* Extending from the btn-primary class to avoid duplication 😖 */
+.sign-up-text  {
+    @extend .btn-primary;
+    text-decoration: underline;
+}
