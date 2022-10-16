@@ -7,17 +7,28 @@
       <div class="wave"></div>
     </div>
     <section class="card-section" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="75px">
-      <mat-card fxLayoutAlign="center center">
-        <img src="/assets/landing-page/girl.svg" />
+      <mat-card fxLayout="column" fxLayoutAlign="center center">
+        <img alt="girl" src="/assets/landing-page/girl.svg" />
+        <span class="card-description">
+          Here's a fun way to match your persona to Harry Potter's characters!
+        </span>
       </mat-card>
 
-      <mat-card fxLayoutAlign="center center">
-        <img src="/assets/landing-page/coven.svg" />
+      <mat-card fxLayout="column" fxLayoutAlign="center center">
+        <img alt="coven" src="/assets/landing-page/coven.svg" />
+        <span class="card-description">
+          Be yourself and answer correctly  to find out your personality!
+        </span>
       </mat-card>
 
-      <mat-card fxLayoutAlign="center center">
-        <img src="/assets/landing-page/cat.svg" />
+      <mat-card fxLayout="column" fxLayoutAlign="center center">
+        <img alt="cat" src="/assets/landing-page/cat.svg" />
+        <span class="card-description">Remember you are just doing this for fun!</span>
       </mat-card>
     </section>
+
+    <button mat-button mat-flat-button class="start-quiz-btn">
+      Start The quiz
+    </button>
   </div>
 </ng-container>

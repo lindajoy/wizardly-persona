@@ -1,6 +1,7 @@
 .page-content{
   width: 100vw;
   height: 70vh;
+  padding-top: 0;
 }
 
 .card-section{
@@ -11,8 +12,15 @@
 .title{
   font-family: 'Quicksand', sans-serif;
   font-size: 42px;
-  font-weight: 600;
+  font-weight: 800;
   color: white;
+  margin-top: -100px;
+}
+
+.card-description {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  text-align: center;
 }
 
 #grad3 {
@@ -91,5 +99,10 @@ mat-card{
   background: rgba(163, 54, 200, 0.1);
   border: none !important;
   box-shadow: none !important;
+}
+
+.start-quiz-btn{
+  width: 300px;
+  margin-top: 15px;
 
 }
