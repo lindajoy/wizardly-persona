@@ -24,7 +24,6 @@
     "@angular/platform-browser-dynamic": "~14.2.2",
     "@angular/router": "~14.2.2",
     "@iote/bricks": "^2.0.0",
-    "@iote/bricks-angular": "^2.0.5",
     "@iote/time": "^2.0.0",
     "@material/card": "^14.0.0",
     "@ngfi/firestore-qbuilder": "^2.0.0",
