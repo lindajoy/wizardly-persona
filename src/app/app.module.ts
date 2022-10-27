@@ -15,8 +15,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon'
 import { MatButtonModule } from '@angular/material/button';
 
-import { MaterialBricksModule } from '@iote/bricks-angular';
-
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
@@ -50,7 +48,6 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
     MatCardModule,MatIconModule,MatButtonModule,
     MatFormFieldModule, FlexLayoutModule,
     FormsModule, ReactiveFormsModule,
-    MaterialBricksModule,
     BrowserAnimationsModule
   ],
   providers: [],
