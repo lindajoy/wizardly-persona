@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { FireStoreService, HarryPorterCharacter } from 'src/app/shared/services/firestore.service';
+import { houses } from 'src/app/shared/services/houses';
+import { PatternsService } from 'src/app/shared/services/patterns.service';
 
 @Component({
   selector: 'wzardly-characters',
@@ -10,16 +12,46 @@ import { FireStoreService, HarryPorterCharacter } from 'src/app/shared/services/
 
 export class WizardlyCharactersComponent implements OnInit {
   
+  //Observables for async operations
   characters$!: Observable<HarryPorterCharacter[]>;
+  houses$!: Observable<any[]>;
 
-  constructor(private _firestoreService:FireStoreService ) { }
+  localCharacters:HarryPorterCharacter[] = [];
+  characterSubs!: Subscription;
+  houseSubs!: Subscription;
+  localHouses: any[] = [];
+
+  constructor(private _patternService:PatternsService ) { }
 
   ngOnInit() { 
     this.getAll();
   }
 
-
   getAll(){
-    this.characters$ = this._firestoreService.getAll()
+    this.characters$ = this._patternService.localCharactersObservable$
+    this.houses$ = this._patternService.localHousesObservable$
   }
+
+  subscribeToCharacters(){
+    this.characterSubs = this._patternService.localCharactersObservable$.subscribe(characters =>{
+      this.localCharacters = characters;
+    })
+  }
+
+  subscribeToHouses(){
+    this.houseSubs = this._patternService.localHousesObservable$.subscribe(houses => {
+      this.localHouses = houses
+    })
+  }
+
+  // create (){
+  //  return this._firestoreService.create(this.data as any)
+  // }
+
+  ngOnDestroy(){
+    this.characterSubs.unsubscribe();
+    this.houseSubs.unsubscribe();
+  }
+
+
 }
