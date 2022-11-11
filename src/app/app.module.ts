@@ -24,6 +24,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
+import { FireStoreService } from './shared/services/firestore.service';
+import { WizardlyCharactersComponent } from './pages/characters/characters.component';
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
     LandingPageComponent,
     ErrorPageComponent,
     NavbarComponent,
-    VerifyEmailComponent
+    VerifyEmailComponent,
+    WizardlyCharactersComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
@@ -50,7 +53,7 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
     FormsModule, ReactiveFormsModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [FireStoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
