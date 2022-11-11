@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { AngularFirestore } from "@angular/fire/compat/firestore";
+import { AngularFirestore, AngularFirestoreCollection } from "@angular/fire/compat/firestore";
 
 
 @Injectable({ providedIn: 'root' })
@@ -8,10 +8,12 @@ export class FireStoreService {
 
   private dbPath = '/characters';
 
-  charactersCollection
+  charactersCollection: AngularFirestoreCollection<HarryPorterCharacter>
+  housesCollection:AngularFirestoreCollection<any>;
 
   constructor(private db: AngularFirestore) {
     this.charactersCollection = db.collection<HarryPorterCharacter>('characters');
+    this.housesCollection = db.collection<any>('houses')
     
   }
 
@@ -22,14 +24,13 @@ export class FireStoreService {
 
   create(HarryPorterCharacters: HarryPorterCharacter[]){
     HarryPorterCharacters.map(async character =>{
-      await this.db.collection('characters').doc().set(character)
-
+      await this.db.collection('characters').doc().set(character);
     })
-    
-    // return this.charactersRef.add(HarryPorterCharacter)
   }
 
-
+  getHouses(){
+    return this.housesCollection.valueChanges();
+  }
 
 }
 
