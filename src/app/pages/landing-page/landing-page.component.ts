@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router:Router) { }
 
   ngOnInit(): void {
+  }
+
+
+  goToCharacters(){
+    return this._router.navigate(['/characters']);
   }
 
 }
