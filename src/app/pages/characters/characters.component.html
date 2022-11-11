@@ -1,0 +1,26 @@
+<ng-container *ngIf="characters$ | async as characters">
+  <div class="page-content" id="grad3" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="15px">
+    <span class="title">Wizardly Persona Test</span>
+    <div class="wave-section">
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+
+    <div fxLayout="row" class="row-char">
+      <div  *ngFor="let character of characters">
+
+        <mat-card fxLayout="column" fxLayoutAlign="center center">
+          <img class="img" alt="girl" [src]="character?.image" />
+          <span class="card-description">
+          {{ character?.name}}
+          </span>
+        </mat-card>
+      </div>
+
+    </div>
+
+    
+  </div>
+</ng-container>
