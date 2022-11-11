@@ -26,6 +26,7 @@ import { environment } from '../environments/environment';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { FireStoreService } from './shared/services/firestore.service';
 import { WizardlyCharactersComponent } from './pages/characters/characters.component';
+import { PatternsService } from './shared/services/patterns.service';
 
 
 @NgModule({
@@ -53,7 +54,7 @@ import { WizardlyCharactersComponent } from './pages/characters/characters.compo
     FormsModule, ReactiveFormsModule,
     BrowserAnimationsModule
   ],
-  providers: [FireStoreService],
+  providers: [FireStoreService, PatternsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
