@@ -18,24 +18,28 @@ export class FireStoreService {
   }
 
 
-  getAll(){
+  getAll() 
+  {
     return this.charactersCollection.valueChanges()
   }
 
-  create(HarryPorterCharacters: HarryPorterCharacter[]){
+  create(HarryPorterCharacters: HarryPorterCharacter[])
+  {
     HarryPorterCharacters.map(async character =>{
       await this.db.collection('characters').doc().set(character);
     })
   }
 
-  getHouses(){
+  getHouses()
+  {
     return this.housesCollection.valueChanges();
   }
 
 }
 
 
-export interface HarryPorterCharacter {
+export interface HarryPorterCharacter 
+{
   id: any;
   name: string,
   image: string,
@@ -43,25 +47,4 @@ export interface HarryPorterCharacter {
   wizard: boolean,
   ancestry: string
 
-}
-const character = {
-  "name": "Harry Potter",
-  "alternate_names": [],
-  "species": "human",
-  "gender": "male",
-  "house": "Gryffindor",
-  "dateOfBirth": "31-07-1980",
-  "yearOfBirth": 1980,
-  "wizard": true,
-  "ancestry": "half-blood",
-  "eyeColour": "green",
-  "hairColour": "black",
-  "wand": { "wood": "holly", "core": "phoenix feather", "length": 11 },
-  "patronus": "stag",
-  "hogwartsStudent": true,
-  "hogwartsStaff": false,
-  "actor": "Daniel Radcliffe",
-  "alternate_actors": [],
-  "alive": true,
-  "image": "https://hp-api.herokuapp.com/images/harry.jpg"
 }
