@@ -34,6 +34,8 @@ export class PatternsService
   //Side effects are used to set the data to our local observable
   private _setCharactersToObservable(){
     this._firestoreService.getAll().pipe(tap(characters => {
+      console.log(characters);
+      debugger
       this._charactersBehaviorSubject.next(characters);
     }))
   }
@@ -55,13 +57,15 @@ export class PatternsService
     }))
   }
 
-  combineBoth(){
+  combineBoth()
+  {
     return combineLatest([this.localCharactersObservable$, this.localHousesObservable$]).pipe(filter(([chars, houses])=>{
       return chars.length > 0 && houses.length > 0;
     }))
   }
 
-  private _setHousesToLocalObservable(){
+  private _setHousesToLocalObservable()
+  {
     this._firestoreService.getHouses().pipe(tap(houses =>{
       this._housesBehaviorSubject.next(houses);
     }))

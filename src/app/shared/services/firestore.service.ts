@@ -11,16 +11,16 @@ export class FireStoreService {
   charactersCollection: AngularFirestoreCollection<HarryPorterCharacter>
   housesCollection:AngularFirestoreCollection<any>;
 
-  constructor(private db: AngularFirestore) {
+  constructor(private db: AngularFirestore) 
+  {
     this.charactersCollection = db.collection<HarryPorterCharacter>('characters');
-    this.housesCollection = db.collection<any>('houses')
-    
+    this.housesCollection = db.collection<any>('houses');
   }
 
 
   getAll() 
   {
-    return this.charactersCollection.valueChanges()
+    return this.charactersCollection.valueChanges();
   }
 
   create(HarryPorterCharacters: HarryPorterCharacter[])

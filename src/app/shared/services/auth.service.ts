@@ -8,6 +8,8 @@ import {
 
 import { Router } from '@angular/router';
 import { User } from '../interfaces/user';
+import { of } from 'rxjs';
+import { delay } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -128,5 +130,10 @@ export class AuthService {
       localStorage.removeItem('user');
       this.router.navigate(['sign-in']);
     });
+  }
+
+  // 💡 canActivateGuard
+  isLogged() {
+    return of(false).pipe(delay(500));
   }
 }
