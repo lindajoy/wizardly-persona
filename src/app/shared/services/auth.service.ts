@@ -21,7 +21,8 @@ export class AuthService {
     public afAuth: AngularFireAuth, // Inject Firebase auth service
     public router: Router,
     public ngZone: NgZone // NgZone service to remove outside scope warning
-  ) {
+  ) 
+  {
     /* Saving user data in localstorage when 
     logged in and setting up null when logged out */
     this.afAuth.authState.subscribe((user) => {
@@ -107,9 +108,8 @@ export class AuthService {
         window.alert(error);
       });
   }
-  /* Setting up user data when sign in with username/password, 
-  sign up with username/password and sign in with social auth  
-  provider in Firestore database using AngularFirestore + AngularFirestoreDocument service */
+  /* Setting up user data when sign in with username/password,  sign up with username/password and sign in with social auth provider in Firestore database using AngularFirestore + AngularFirestoreDocument service */
+  
   SetUserData(user: any) {
     const userRef: AngularFirestoreDocument<any> = this.afs.doc(
       `users/${user.uid}`
@@ -124,6 +124,7 @@ export class AuthService {
       merge: true,
     });
   }
+  
   // Sign out
   SignOut() {
     return this.afAuth.signOut().then(() => {
@@ -132,7 +133,8 @@ export class AuthService {
     });
   }
 
-  // 💡 canActivateGuard
+  // 💡 canActivateGuard => Controls if a route can be activated
+
   isLogged() {
     return of(false).pipe(delay(500));
   }
