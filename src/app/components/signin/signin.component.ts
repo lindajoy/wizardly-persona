@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 import { Router } from '@angular/router';
+import { Observable, of } from 'rxjs';
+
 import { AuthService } from 'src/app/shared/services/auth.service';
 
 @Component({
@@ -14,6 +17,9 @@ export class SigninComponent implements OnInit {
   showFirstStep!: boolean;
   showSecondStep!: boolean;
   tempFormVals: any;
+  isSaved = false;
+
+
 
   constructor(private _fb: FormBuilder,
               private _router: Router,
@@ -35,6 +41,7 @@ export class SigninComponent implements OnInit {
   }
 
   goToNextStep() {
+    this.onSubmit();
     this.showFirstStep = false;
     this.showSecondStep = true;
     const formVals = this.loginForm.value;
@@ -43,6 +50,19 @@ export class SigninComponent implements OnInit {
 
   goToHomePage() {
     return this._router.navigate(['home'])
+  }
+
+  canDeactivate(): Observable<boolean> {
+    if (!this.isSaved) {
+      const result = window.confirm('There are unsaved changes! Are you sure?');
+      return of(result);
+    }
+
+    return of(true);
+  }
+
+  onSubmit() {
+    this.isSaved = true;
   }
 
   getWizardlyLanding = () => '/assets/images/magic/wizard.png';

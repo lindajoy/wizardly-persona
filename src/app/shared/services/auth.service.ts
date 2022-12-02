@@ -136,6 +136,12 @@ export class AuthService {
   // 💡 canActivateGuard => Controls if a route can be activated
 
   isLogged() {
-    return of(false).pipe(delay(500));
+    return of(true).pipe(delay(500));
   }
+
+//   const arr = [1, 2, 3];
+
+// const arr$ = of(this.arr);
+
+// arr$.subscribe((values) => console.log(`Emitted Values: `, values));
 }

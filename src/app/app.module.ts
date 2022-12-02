@@ -51,8 +51,13 @@ import { PatternsService } from './shared/services/patterns.service';
     MatSliderModule,
     MatCardModule,MatIconModule,MatButtonModule,
     MatFormFieldModule, FlexLayoutModule,
-    FormsModule, ReactiveFormsModule,
+    FormsModule, 
+    ReactiveFormsModule,
     BrowserAnimationsModule
+  ],
+  exports: [
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [FireStoreService, PatternsService],
   bootstrap: [AppComponent]

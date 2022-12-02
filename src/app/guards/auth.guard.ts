@@ -15,11 +15,17 @@ import { map } from 'rxjs/operators';
 
 import { AuthService } from '../shared/services/auth.service';
 
+// service
 @Injectable({
   providedIn: 'root',
 })
-export class AuthenticationGuard implements CanActivate {
-  constructor(private auth: AuthService, private router: Router) {}
+
+export class AuthenticationGuard implements CanActivate 
+{
+  constructor(private auth: AuthService, 
+               private router: Router)
+                {}
+  
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot

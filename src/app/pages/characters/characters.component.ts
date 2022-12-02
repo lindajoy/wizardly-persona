@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 
 import { Observable, Subscription } from 'rxjs';
 
@@ -21,13 +22,23 @@ export class WizardlyCharactersComponent implements OnInit {
   characterSubs!: Subscription;
   houseSubs!: Subscription;
   localHouses: any[] = [];
+  chars!: Observable<HarryPorterCharacter[]>;
+  charsCollection: AngularFirestoreCollection<HarryPorterCharacter> | undefined;
 
-  constructor(private _patternService:PatternsService ) 
+
+
+  constructor(private _patternService:PatternsService,
+              private readonly afs: AngularFirestore ) 
   { }
 
   ngOnInit() { 
     this.getAll();
   }
+
+  // .snapshotChanges() returns a DocumentChangeAction[], which contains
+  // a lot of information about "what happened" with each change. If you want to
+  // get the data and the id use the map operator.
+  
 
   getAll()
   {
@@ -37,7 +48,8 @@ export class WizardlyCharactersComponent implements OnInit {
 
   subscribeToCharacters()
   {
-    this.characterSubs = this._patternService.localCharactersObservable$.subscribe(characters =>
+    this.characterSubs = 
+    this._patternService.localCharactersObservable$.subscribe(characters =>
     {
       this.localCharacters = characters;
     })

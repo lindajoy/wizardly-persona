@@ -14,8 +14,14 @@ export class LandingPageComponent implements OnInit {
   }
 
 
-  goToCharacters(){
+  goToCharacters()
+  {
     return this._router.navigate(['/characters']);
+  }
+
+  goFillForm() 
+  {
+    return this._router.navigate(['/fillform']);
   }
 
 }
